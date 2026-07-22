@@ -38,8 +38,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(253,248,245,
 
 /* HERO — full viewport with photo background */
 .hero{min-height:100vh;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center top;background-repeat:no-repeat}
-.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+.hero-bg{position:absolute;inset:0;background:#2C1A20;background-size:cover;background-position:center top;background-repeat:no-repeat}
+.hero-bg img{width:100%;height:100%;object-fit:contain;object-position:center center;display:block;max-height:100vh}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(185,55,94,0.82) 0%,rgba(67,67,67,0.75) 50%,rgba(190,154,96,0.7) 100%)}
 .hero-content{position:relative;z-index:2;text-align:center;padding:120px 2rem 80px;max-width:900px;margin:0 auto}
 .hero-eyebrow{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;padding:0.4rem 1.1rem;border-radius:30px;font-size:0.72rem;font-weight:600;letter-spacing:0.08em;margin-bottom:1.75rem}
@@ -137,7 +137,7 @@ section{padding:88px 2.5rem}
 .ec-co{font-size:0.825rem;color:var(--rose);font-weight:600;margin-bottom:1rem}
 .ebl{list-style:none;display:flex;flex-direction:column;gap:0.5rem}
 .ebl li{color:var(--text2);font-size:0.825rem;line-height:1.7;padding-left:1.1rem;position:relative}
-.ebl li::before{content:'&#8594;';position:absolute;left:0;color:var(--gold);font-size:0.72rem;top:0.2rem;font-weight:700}
+.ebl li::before{content:'\2192';position:absolute;left:0;color:var(--gold);font-size:0.72rem;top:0.2rem;font-weight:700}
 
 /* EDUCATION */
 .education{background:var(--white)}
